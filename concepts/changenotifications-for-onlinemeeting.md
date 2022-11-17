@@ -33,7 +33,7 @@ Content-Type: application/json
 
 {
   "changeType": "updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "notificationUrl": "https://notificationurl/api/",
   "resource": "/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
@@ -51,10 +51,10 @@ Content-Type: application/json
 ```json
 {
   "value": [{
-    "subscriptionId": "{Subscription id}",
-    "clientState": "{secret client state}",
+    "subscriptionId": "9c752e7a-c402-4e66-843a-1faa23771aae",
+    "clientState": "secret client state",
     "changeType": "updated",
-    "tenantId": "{Organization/Tenant id}",
+    "tenantId": "b2f7a368-d2cb-4bef-8927-11338c73a9d7",
     "resource": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'",
     "subscriptionExpirationDateTime": "2022-02-28T00:00:00.0000000Z",
     "resourceData": {
@@ -62,7 +62,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.onlineMeeting",
       "id": "communications/onlineMeetings?$filter=joinWebUrl+eq+'{joinWebUrl}'"
     },
-    "organizationId": "{Organization/Tenant id}",
+    "organizationId": "b2f7a368-d2cb-4bef-8927-11338c73a9d7",
     "encryptedContent": {
       "data": "{Encrypted content}",
       "dataSignature": "{Encrypted data signature}",
